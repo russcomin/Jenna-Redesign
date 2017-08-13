@@ -1,0 +1,312 @@
+/** COLOR 
+  #1464f6 **/
+
+@font-face {
+    font-family: Roboto-Bold;
+    src: url("fonts/Roboto-Bold.ttf");
+}
+
+@font-face {
+    font-family: Roboto-Light;
+    src: url(fonts/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(fonts/Roboto-Regular.ttf);
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+#side-nav {
+	width: 50px;
+	height: 1200px;
+	background-color: #222d32;
+	float: left;
+}
+
+#top-nav {
+	width: 100vw;
+	height: 48px;
+	background-color: #1464f6;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.navigation li {
+	padding: 15px;
+	display: inline-block;
+	margin-left: 20px;
+}
+
+.navigation li:hover {
+	background-color: rgba(255,255,255,.5);
+	transition: .6s;
+}
+
+.navigation li a {
+	color: white;
+	font-family: Roboto-Regular;
+	font-size: 11px;
+}
+
+.text-line {
+	width: 1280px;
+	height: 40px;
+	margin-top: 70px;
+}
+
+.left-t {
+	width: 90%;
+	height: 100%;
+	float: left;
+}
+
+.right-t {
+	width: 10%;
+	height: 100%;
+	float: left;
+}
+
+.s-paused {
+	width: 50%;
+	height: 100%;
+	float: left;
+	text-align: right;
+}
+
+.s-active {
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+
+.s-paused p {
+	display: inline-block;
+	font-family: Roboto-Bold;
+	font-size: 11px;
+	color: #aeaeae;
+	margin-left: 5px;
+}
+
+.s-active p {
+	display: inline-block;
+	font-size: 11px;
+	font-family: Roboto-Bold;
+	color: #aeaeae;
+}
+
+.s-active img {
+	margin-left: 20px;
+}
+
+.t-text {
+	font-family: Roboto-Bold;
+	font-size: 11px;
+	color: #6e706f;
+	margin-left: 70px;
+}
+
+.status-bar {
+	width: 50%;
+}
+
+.t-text span {
+	font-family: Roboto-Light;
+	font-size: 10px;
+	color: #a1a2a1;
+}
+
+.cards {
+	width: 1280px;
+	height: 700px;
+	margin: 0 auto;
+}
+
+.job-card-active {
+	transition: .4s;
+	float: left;
+	width: 250px;
+	height: 250px;
+	margin-left: 70px;
+	margin-top: 40px;
+	border-bottom: 3px solid #2ecc71;
+	-webkit-box-shadow: 0px 1px 22px 0px rgba(0,0,0,0.22);
+	-moz-box-shadow: 0px 1px 22px 0px rgba(0,0,0,0.22);
+	box-shadow: 0px 1px 22px 0px rgba(0,0,0,0.22);
+}
+
+.add {
+	border-bottom: 3px solid #1464f6;
+	text-align: center;
+	font-family: Roboto-Light;
+	color: #aeaeae;
+	font-size: 9px;
+	letter-spacing: 2px;
+	cursor: pointer;
+}
+
+.job-card-active:hover {
+	transition: .4s;
+	-webkit-box-shadow: 0px 1px 70px 0px rgba(0,0,0,0.31);
+	-moz-box-shadow: 0px 1px 70px 0px rgba(0,0,0,0.31);
+	box-shadow: 0px 1px 70px 0px rgba(0,0,0,0.31);
+}
+
+.add h2 {
+	line-height: 25px;
+	margin-top: 10px;
+}
+
+.comps {
+	margin-top: 60px;
+}
+
+.status {
+	width: 100%;
+	height: 20%;
+}
+
+.paused {
+	border-bottom: 3px solid #e74c3c;
+}
+
+.paused .status-left p{
+	color: #e74c3c;
+}
+
+.status-left {
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+
+.status-left p {
+	font-family: Roboto-Bold;
+	font-size: 11px;
+	color: #2ecc71;
+	margin: 0px;
+	display: inline-block;
+}
+
+.status-right {
+	width: 50%;
+	height: 100%;
+	float: left;
+	text-align: right;
+	cursor: pointer;
+}
+
+.del {
+	margin-top: 22px;
+	margin-right: 15px;
+}
+
+.edit {
+	margin-right: 18px;
+}
+
+.active {
+	margin: 28px 0px 0px 28px;
+}
+
+.name {
+	width: 100%;
+	height: 60%;
+}
+
+.name h2 {
+	margin-left: 28px;
+	font-family: Roboto-Regular;
+	font-weight: initial;
+	color: #898a8a;
+	line-height: 40px;
+	margin-top: 28px;
+	font-size: 13pt;
+}
+
+.candidates {
+	width: 100%;
+	height: 20%;
+	text-align: center;
+
+}
+
+.candidates p {
+	font-family: Roboto-Light;
+	font-size: 10pt;
+	color: #a6a6a6;
+	line-height: 7px;
+}
+
+@media only screen and (max-width: 1400px) {
+	.cards {
+		width: 1000px;
+	}
+
+	.text-line {
+		width: 1000px;
+	}	
+
+	.left-t {
+		width: 80%;
+		height: 100%;
+		float: left;
+	}
+
+	.right-t {
+		width: 20%;
+		height: 100%;
+		float: right;
+	}
+
+	.s-paused {
+		width: 49%;
+		height: 100%;
+		float: left;
+		text-align: right;
+	}
+
+	.s-active {
+		width: 50%;
+		height: 100%;
+		float: right;
+	}
+}
+
+@media only screen and (max-width: 1117px) {
+	.right-t {
+		margin-top: -40px;
+	}
+}
+
+@media only screen and (max-width: 1037px) {
+	.cards {
+		width: 700px;
+	}
+
+	.text-line {
+		width: 700px;
+	}
+
+	.right-t {
+		margin-top: 0px;
+	}
+
+	.job-card-active {
+		margin-left: 90px;
+	}
+}
